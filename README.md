@@ -12,4 +12,5 @@ When the file is ok, picture is sent through ftp and saved in "save" folder.
 
 You can execute the powershell script through a batch file you can put anywhere you want.
 
-First: you have to put the script without the batch in c:\fff folder. 
+NB: you have to put the script without the batch in c:\fff folder.
+A full set example of pictures is available in the "examples" folder. 
