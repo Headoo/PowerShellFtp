@@ -12,9 +12,9 @@ $Dir= 'c:\fff\medias\'
 $saveDir = 'c:\fff\save\'
 
 #ftp server params
-$ftp = 'ftp://10.0.1.11:26000/'
-$user = 'snitch'
-$pass = 'headoo'
+$ftp = 'ftp://xx.x.x.xx:#port#/'
+$user = 'user'
+$pass = 'pass'
 
 #Conntect to ftp webclient
 $webclient = New-Object System.Net.WebClient 
