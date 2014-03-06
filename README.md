@@ -1,16 +1,26 @@
-PowerSHell FTP
-========================
-
-Upload jpg images to a ftp server through PowerShell.
-Put pictures to send in "medias" folder, they will be save in "save" folder after being treated.
+POWERSHELL FTP
+==============
+Upload jpg images on the hard drive to a ftp server, using PowerShell.
 
 HOW DOES IT WORK?
 =================
-The script checks the directory every second and, for security reasons, check if each picture creation date is greater than 2 seconds.
-This is to avoid manipulating a picture that hasn't fully finished being written on disk (High quality image).
-When the file is ok, picture is sent through ftp and saved in "save" folder.
+The script checks every second, for "jpg" images in a "medias" directory on your hard drive.
+When an image is found, it is automatically sent to the remote ftp directory you specify.
 
-You can execute the powershell script through a batch file you can put anywhere you want.
+Security options
+================
+If upload is complete, the image is saved in a "save" directory on your hard drive, then, deleted from the "medias" directory.
+If upload is not complete, images still in "medias" directory and the script tries again indefinitely.
+For big size images, we wait 2 seconds after an image has been created in the "medias" folder, to send it through ftp.
 
-NB: you have to put the script without the batch in c:\fff folder.
-A full set example of pictures is available in the "examples" folder. 
+Architecture
+============
+Put the script in a directory that you call, by example "c:\fff".
+Create in this directory, two directories, "medias" and "save".
+
+Automation
+==========
+To execute easier the file, put the automate batch on your desktop, run it.
+
+
+NB: If you encounter any issues, feel free to contact me at edouard.kombo@gmail.com.
