@@ -1,1 +1,1 @@
-Powershell set-executionpolicy remotesigned -File  C:\fff\script.ps1
+Powershell C:\fff\script.ps1
