@@ -1,1 +1,0 @@
-Powershell C:\fff\script.ps1
